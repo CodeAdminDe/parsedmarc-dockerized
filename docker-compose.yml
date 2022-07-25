@@ -12,8 +12,6 @@ services:
       - ./parsedmarc/parsedmarc.ini:/etc/parsedmarc.ini:z
       #- /path/to/GeoIP:/usr/share/GeoIP
     restart: unless-stopped
-    networks:
-      - parsedmarc-network
     depends_on:
       elasticsearch:
         condition: service_healthy
@@ -33,8 +31,6 @@ services:
     volumes:
       - ./elasticsearch/data/:/usr/share/elasticsearch/data/:z
     restart: "unless-stopped"
-    networks:
-      - parsedmarc-network
     healthcheck:
       test: ["CMD", "curl","-s" ,"-f", "http://localhost:9200/_cat/health"]
       interval: 1m
@@ -53,8 +49,6 @@ services:
     ports:
       - "5601:5601"
     restart: unless-stopped
-    networks:
-      - parsedmarc-network
     depends_on:
       elasticsearch:
         condition: service_healthy
@@ -71,9 +65,3 @@ services:
       - ./nginx/conf.d/:/etc/nginx/conf.d/:z
       - ./nginx/ssl/:/etc/nginx/ssl/:z
       - ./nginx/htpasswd:/etc/nginx/htpasswd:z
-    networks:
-      - parsedmarc-network
-
-networks:
-    parsedmarc-network:
-      driver: bridge
