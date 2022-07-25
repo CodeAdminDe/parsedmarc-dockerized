@@ -7,7 +7,6 @@ services:
       context: .
       dockerfile: parsedmarc/Dockerfile
     command: "parsedmarc -c /etc/parsedmarc.ini"
-    tty: true
     volumes:
       - ./parsedmarc/parsedmarc.ini:/etc/parsedmarc.ini:z
       #- /path/to/GeoIP:/usr/share/GeoIP
@@ -57,7 +56,6 @@ services:
     container_name: "nginx"
     image: nginx:alpine
     restart: unless-stopped
-    tty: true
     ports:
       - "80:80"
       - "443:443"
