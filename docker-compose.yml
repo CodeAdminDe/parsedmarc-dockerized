@@ -46,11 +46,3 @@ services:
     depends_on:
       elasticsearch:
         condition: service_healthy
-
-  nginx:
-    image: nginx:alpine
-    restart: unless-stopped
-    volumes:
-      - ./nginx/conf.d/:/etc/nginx/conf.d/:z
-      - ./nginx/ssl/:/etc/nginx/ssl/:z
-      - ./nginx/htpasswd:/etc/nginx/htpasswd:z
