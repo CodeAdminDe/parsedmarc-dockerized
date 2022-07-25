@@ -5,7 +5,6 @@ services:
     build:
       context: .
       dockerfile: parsedmarc/Dockerfile
-    command: "parsedmarc -c /etc/parsedmarc.ini"
     volumes:
       - ./parsedmarc/parsedmarc.ini:/etc/parsedmarc.ini:z
       #- /path/to/GeoIP:/usr/share/GeoIP
