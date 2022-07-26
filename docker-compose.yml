@@ -3,8 +3,8 @@ version: '3.4'
 services:
   parsedmarc:
     build:
-      context: .
-      dockerfile: parsedmarc/Dockerfile
+      context: ./parsedmarc/
+      dockerfile: ./Dockerfile
     environment:
       # in general: <section>.<option>
       parsedmarc.general.save_aggregate: "True"
