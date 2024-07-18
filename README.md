@@ -1,6 +1,11 @@
-# parsedmarc-dockerized for J&C Bachmann
+# parsedmarc-dockerized for IT-Habich
 
-This is a fork for our internal uses.
-You may apply [some or all changes](https://github.com/dragoangel/parsedmarc-dockerized/compare/master...jcbachmann:parsedmarc-dockerized:jcb) for yourself. Without garantee.
+This is a fork of a fork for our internal purposes only. 
+The code is not maintained by IT-Habich for further (re-) use.
 
-Please checkout the original: https://github.com/dragoangel/parsedmarc-dockerized
+Of course you can make changes and / or use the code for yourself, because it's GitHub ;-) 
+But please be aware of the fact, that you would use it without any guarantee or warranty from us.
+
+Please have a look at the
+* fork: https://github.com/jcbachmann/parsedmarc-dockerized
+* original: https://github.com/dragoangel/parsedmarc-dockerized
