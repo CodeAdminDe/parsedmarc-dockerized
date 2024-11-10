@@ -1,6 +1,6 @@
-# parsedmarc-dockerized for IT-Habich
+# parsedmarc-dockerized for CodeAdminDe
 
-This is a fork of a fork for _our internal purposes only_.
+This is a fork of a fork for _my private purposes only_.
 
 The code is __not__ actively maintained by IT-Habich for further (re-) use.
 
