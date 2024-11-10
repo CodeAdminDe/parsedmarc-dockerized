@@ -2,7 +2,7 @@
 
 This is a fork of a fork for _my private purposes only_.
 
-The code is __not__ actively maintained by IT-Habich for further (re-) use.
+The code is __not__ actively maintained by me for further (re-) use.
 
 Of course you can make changes and / or use the code for yourself, because it's GitHub and OpenSource. ;-) 
 But please be aware of the fact, that you would use it without any guarantee or warranty from us.
